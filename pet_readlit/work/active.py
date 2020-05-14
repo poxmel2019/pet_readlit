@@ -16,6 +16,7 @@ def f():
         
     bal = 0
 
+    #Data
     there_is = open('there_is.txt','r',encoding='utf-8')
     ts_list = there_is.readlines()
     there_is.close()
@@ -76,6 +77,8 @@ def f():
     print('You you read the next book: {0}\
 \nBecause it has max rate: {1}\
 \nIt\'s categories: '.format(_books[i],max_rate))
+
+    
     
 
     

@@ -46,11 +46,33 @@ def f():
         i += 1
 
     set_repeated_texts = set(repeated_texts)
-    
-    for x,y in rep_text_dict.items():
-        print(x + ' - ' + str(y))
 
-    print(len(rep_text_dict))
+    
+    #for x,y in rep_text_dict.items():
+    #    print(x + ' - ' + str(y))
+       
+
+    cats_list = []
+    for x in range(len(repeated_texts)):
+        cats_list.append([])
+        
+    j = 0
+    while j < len(repeated_texts):
+        k = 0
+        for x in fullist:
+            for y in x:
+                if repeated_texts[j] == y:
+                    cats_list[j].append(categories[k])
+            k += 1
+        j += 1
+        
+    k = 0    
+    for x in repeated_texts:
+        print('{0} - {1} - {2}'.format(repeated_texts[k],len(cats_list[k]),
+                                       cats_list[k]))
+        k += 1
+
+    print('Total:',len(rep_text_dict))
 
 def create_lists(*args):
 

@@ -51,7 +51,6 @@ def f():
     #for x,y in rep_text_dict.items():
     #    print(x + ' - ' + str(y))
        
-
     cats_list = []
     for x in range(len(repeated_texts)):
         cats_list.append([])
@@ -68,7 +67,7 @@ def f():
         
     k = 0    
     for x in repeated_texts:
-        print('{0} - {1} - {2}'.format(repeated_texts[k],len(cats_list[k]),
+        print('{0} - {1} - {2}'.format(repeated_texts[k].strip('\n'),len(cats_list[k]),
                                        cats_list[k]))
         k += 1
 

@@ -1,10 +1,10 @@
 list_for_handling = ['best100books','best100books2','litres','offered',
                      'philosophy','unfinished']
-ready_lists = ['Mirzhan','mob_app','offered_from_study','storybook',
+ready_list = ['Mirzhan','mob_app','offered_from_study','storybook',
                'study']
 
 path1 = 'D:\\pet_readlit\\pet_readlit\\work\\raw_lists\\'
-path2 = 'D:\\pet_readlit\\pet_readlit\\work\\'
+path2 = 'D:\\pet_readlit\\pet_readlit\\work\\lists_for_analyze\\'
 expa = '.txt'
 
 def b100b():
@@ -17,6 +17,7 @@ def b100b():
     for x in file_list:
         new_list.append(x[x.index(' - ')+3:].strip('\n'))
 
+    
     create_new_file(new_list,list_for_handling[0])
 
 def b100b2():
@@ -33,7 +34,7 @@ def b100b2():
         except ValueError:
             file_list[i] = x[x.index('.')+2:x.rindex('.')]
         i += 1
-            
+
     show_list(file_list)
 
     create_new_file(file_list,list_for_handling[1])
@@ -47,11 +48,13 @@ def litres():
     for x in file_list:
         file_list[i] = x[x.index('.')+2:x.index('(')]
         i += 1
-
+    
     show_list(file_list)
     
     create_new_file(file_list,list_for_handling[2])
+
 def unfinished():
+    '''unfinished'''
     # 4
     file_list = retrieve_data_from_file(list_for_handling[5])
 
@@ -74,6 +77,7 @@ def unfinished():
     
 
 def philosophy():
+    '''philosophy'''
     # 5
    
     file_list = retrieve_data_from_file(list_for_handling[4])

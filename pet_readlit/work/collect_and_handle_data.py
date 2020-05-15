@@ -109,7 +109,24 @@ def philosophy():
            fili.append(y)
            
     create_new_file(fili,list_for_handling[4])
- 
+
+def offered():
+    '''offered'''
+    # 6
+    file_list = retrieve_data_from_file(list_for_handling[3])
+    #print(file_list)
+  
+    new_list = []
+    for x in file_list:
+        try:
+            new_list.append(x[x.index('"')+1:x.rindex('"')])
+        except ValueError:
+            continue
+
+    
+    create_new_file(new_list,list_for_handling[3])
+    show_list(new_list)
+   
 def retrieve_data_from_file(path_from_list):
     
     file = open(path1+path_from_list+expa,'r',encoding='utf-8')

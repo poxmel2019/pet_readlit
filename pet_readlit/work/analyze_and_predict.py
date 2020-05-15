@@ -2,6 +2,7 @@ import collect_and_handle_data as chd
 
 def f():
     print(chd.list_for_handling)
+    print(chd.ready_lists)
     
 
 def p():

@@ -146,6 +146,10 @@ def create_new_file(some_list,name):
 def show_list(some_list):
     for x in some_list:
         print(x)
+
+def show_dict(some_dict):
+    for x, y in some_dict.items():
+        print(x,'-',y)
         
 def fill_file(some_list, some_file):
     for x in some_list: some_file.write(x+'\n')

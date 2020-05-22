@@ -91,9 +91,12 @@ def p():
     for x in questions:#.items():
         user_answer = input(x+' = \n')
         user_dict[x] = user_answer
+
+    for x in user_dict:
+        print(x)
         
 
-    print(count)
+    
 
     # 'Mirzhan' # 0
     # 'mob_app' # 1

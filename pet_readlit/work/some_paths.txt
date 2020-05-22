@@ -1,0 +1,7 @@
+C:\Users\madiyar.tolkybek\AppData\Local\Programs\Python\Python37-32
+C:\Users\madiyar.tolkybek\AppData\Local\Programs\Python\Python37-32\lib
+C:\Users\madiyar.tolkybek\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urlopen.py
+c:\users\madiyar.tolkybek\appdata\roaming\python\python37\site-packages (1.0.0b1)
+C:\Users\madiyar.tolkybek\AppData\Local\Programs\Python\Python38
+'D:\\pyda\\forData\\books.xlsx'
+'D:\\mySpreadsheets\\'

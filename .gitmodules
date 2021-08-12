@@ -1,0 +1,3 @@
+[submodule "pet_readlit/pet_readlit/forData"]
+	path = pet_readlit/pet_readlit/forData
+	url = https://github.com/poxmel2019/forData.git
